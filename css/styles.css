@@ -343,6 +343,52 @@ a { color: inherit; }
   fill: var(--teal-light);
 }
 
+/* Card de setor em destaque (clínicas odontológicas) */
+.sector-grid li.sector-featured {
+  background: var(--red);
+  border-color: var(--red);
+  border-left-color: #fff;
+  box-shadow: 0 12px 28px -14px rgba(217,67,46,.9);
+}
+.sector-grid li.sector-featured:hover { background: var(--red-dark); }
+.sector-featured .sector-ico { fill: #fff; }
+.sector-tag {
+  margin-left: auto;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  background: #fff;
+  color: var(--red);
+  padding: 4px 9px;
+  border-radius: 3px;
+}
+
+/* ============================================================
+   DESTAQUE: ODONTOLOGIA
+   ============================================================ */
+.dental { background: var(--cream-2); padding: clamp(64px, 8vw, 100px) 0; }
+.dental-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+.dental-copy h2 {
+  font-weight: 900; font-size: clamp(1.9rem, 4vw, 2.8rem);
+  text-transform: uppercase; margin: 4px 0 18px;
+}
+.dental-copy h2 .hl-red { color: var(--red); }
+.dental-lead { color: var(--muted); font-size: 1.08rem; max-width: 520px; margin-bottom: 28px; }
+.dental-points { list-style: none; display: grid; gap: 18px; }
+.dental-points li {
+  background: var(--cream);
+  border-left: 3px solid var(--teal);
+  border-radius: var(--r);
+  padding: 20px 22px;
+}
+.dental-points h3 {
+  font-size: 1.1rem; font-weight: 800; text-transform: uppercase;
+  color: var(--teal-deep); margin-bottom: 6px;
+}
+.dental-points p { color: var(--muted); font-size: .96rem; }
+
 /* ============================================================
    SERVIÇOS
    ============================================================ */
@@ -538,6 +584,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .contact-inner { grid-template-columns: 1fr; gap: 36px; }
   .why-grid { grid-template-columns: 1fr; border-top: none; }
   .why-item { border-right: none; border-top: 2px solid var(--ink); padding: 28px 0; }
+  .dental-inner { grid-template-columns: 1fr; gap: 32px; }
 }
 
 @media (max-width: 720px) {
