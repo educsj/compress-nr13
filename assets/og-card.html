@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;900&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #16202E;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 80px;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .topbar {
+    position: absolute; top: 0; left: 0; right: 0; height: 14px;
+    background: linear-gradient(90deg, #15677A 0 60%, #D9432E 60% 100%);
+  }
+  .brand { position: relative; display: flex; align-items: center; gap: 18px; margin-bottom: 38px; }
+  .brand svg { width: 64px; height: 64px; }
+  .brand .name { font-family: "Archivo", sans-serif; font-weight: 900; font-size: 46px; letter-spacing: .06em; line-height: 1; }
+  .brand .sub { font-size: 14px; letter-spacing: .28em; text-transform: uppercase; opacity: .8; margin-top: 6px; }
+  h1 {
+    position: relative;
+    font-family: "Archivo", sans-serif;
+    font-weight: 900; text-transform: uppercase;
+    font-size: 78px; line-height: .98; letter-spacing: -.01em;
+    max-width: 880px;
+  }
+  h1 .red { color: #D9432E; }
+  h1 .teal { color: #4FB3D9; }
+  .foot { position: relative; display: flex; align-items: center; gap: 28px; margin-top: 42px; font-family: "Archivo", sans-serif; font-weight: 700; }
+  .pill { background: #D9432E; color: #fff; padding: 14px 26px; border-radius: 6px; font-size: 24px; letter-spacing: .03em; }
+  .phone { font-size: 30px; letter-spacing: .02em; }
+  .seal {
+    position: absolute; top: 70px; right: 80px;
+    width: 150px; height: 150px; border-radius: 50%;
+    background: #FBF8F1; border: 4px solid #D9432E; color: #D9432E;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: "Archivo", sans-serif; transform: rotate(-8deg);
+    box-shadow: 0 0 0 8px rgba(217,67,46,.15);
+  }
+  .seal .s1, .seal .s3 { font-size: 13px; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; }
+  .seal .s2 { font-size: 38px; font-weight: 900; line-height: 1; margin: 4px 0; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="topbar"></div>
+
+  <div class="seal">
+    <span class="s1">Atenção</span>
+    <span class="s2">NR-13</span>
+    <span class="s3">Obrigatória</span>
+  </div>
+
+  <div class="brand">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <path fill="#fff" d="M32 4l4.2 2 4.6-.6 3 3.5 4.5 1.3 1.3 4.5 3.5 3-.6 4.6 2 4.2-2 4.2.6 4.6-3.5 3-1.3 4.5-4.5 1.3-3 3.5-4.6-.6L32 60l-4.2-2-4.6.6-3-3.5-4.5-1.3-1.3-4.5-3.5-3 .6-4.6L9.5 32l2-4.2-.6-4.6 3.5-3 1.3-4.5 4.5-1.3 3-3.5 4.6.6L32 4z"/>
+      <circle cx="32" cy="32" r="15" fill="#15677A"/>
+      <circle cx="32" cy="32" r="15" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M32 32 L41 24" stroke="#D9432E" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <circle cx="32" cy="32" r="3" fill="#fff"/>
+    </svg>
+    <div>
+      <div class="name">COMPRESS</div>
+      <div class="sub">Adequação à NR-13</div>
+    </div>
+  </div>
+
+  <h1>Seu compressor está <span class="red">fora da lei?</span><br><span class="teal">Regularize agora.</span></h1>
+
+  <div class="foot">
+    <span class="pill">Vistoria sem compromisso</span>
+    <span class="phone">(31) 99936-3507</span>
+  </div>
+</body>
+</html>
